@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electiva 2</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <style>
+      /* Estilo para el rombo completo */
+      .spinner {
+        width: 100px;
+        height: 60px%;
+        background-color: #000000; /* Color del rombo */
+        transform: rotate(45deg); /* Rotar 45° para crear el rombo */
+        animation: spin 1s linear infinite; /* Animación giratoria */
+      }
+
+      /* Animación de giro */
+      @keyframes spin {
+        0% {
+          transform: rotate(45deg);
+        }
+        100% {
+          transform: rotate(405deg); /* +360° para girar completamente */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-screen flex justify-center items-center bg-slate-900">
+      <!-- Rombo giratorio completo -->
+      <div role="status">
+        <div class="spinner"></div>
+      </div>
+
+      <!-- Texto debajo del rombo -->
+      <h2 class="ml-6 text-white font-semibold">Randy de Jesús - 20221000</h2>
+    </div>
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
